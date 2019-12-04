@@ -21,6 +21,6 @@ tar -xvzf "$SOURCE_DIR" -C "$TARGET_DIR" | indent
 
 echo "-----> Extracting fontconfig to $FONTCONFIG_TARGET_DIR"
 mkdir -p "$FONTCONFIG_TARGET_DIR"
-cp -a "$FONTCONFIG_SOURCE_DIR" "$FONTCONFIG_TARGET_DIR" | indent
+cp -av "$FONTCONFIG_SOURCE_DIR" "$FONTCONFIG_TARGET_DIR" | indent
 
 fc-cache -fv
